@@ -205,11 +205,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Code\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj",
+      "projectUniqueName": "C:\\Code\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj",
       "projectName": "PaymentContext.Shared",
-      "projectPath": "c:\\Code\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj",
+      "projectPath": "C:\\Code\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj",
       "packagesPath": "C:\\Users\\rodrigo.duarte\\.nuget\\packages\\",
-      "outputPath": "c:\\Code\\PaymentContext\\PaymentContext.Shared\\obj\\",
+      "outputPath": "C:\\Code\\PaymentContext\\PaymentContext.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
