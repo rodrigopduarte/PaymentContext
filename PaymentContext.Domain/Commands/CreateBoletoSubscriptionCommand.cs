@@ -1,9 +1,12 @@
 using System;
+using Flunt.Notifications;
+using Flunt.Validations;
 using PaymentContext.Domain.Enums;
+using PaymentContext.Shared.Commands;
 
 namespace PaymentContext.Domain.Commands
 {
-    public class CreateBoletoSubscriptionCommand
+    public class CreateBoletoSubscriptionCommand: Notifiable, ICommand
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -24,8 +27,16 @@ namespace PaymentContext.Domain.Commands
         public string Number { get; set; }
         public string Neighborhood { get; set; }
         public string City { get; set; }
-        public string Sate { get; set; }
+        public string State { get; set; }
         public string Country { get; set; }
         public string ZipCode { get; set; }
+
+        public void Validate()
+        {
+            AddNotifications(new Contract()
+                .Requires()
+                .IsNotNullOrEmpty(FirstName,"FirstName","O nome do aluno é obrigatório")
+            );
+        }
     }
 }
